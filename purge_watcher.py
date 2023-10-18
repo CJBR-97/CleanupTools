@@ -2,6 +2,15 @@ import re
 import pandas as pd
 
 def purge_watcher(path_purge_file, path_out_file):
+  """ Returns a pandas dataframe of files up for deletion each month on Digital Alliance or SciNet
+  Keyword Args:
+  * path_purge_file (str): Path to the input file, including file title, ex. dir/subdir/myOldSciNetFiles.txt
+  * path_out_file (str): Path to the output destination, including file title, ex. dir/subdir/upForDeletion.csv
+
+  Returns:
+  * G_count (list of int): A list indicating the number of atoms with i edges in G, where i is the index of G_count
+  """
+  
   if not type(path_purge_file) is str or not type(path_out_file) is str:
     raise TypeError("Only string paths are allowed")
   text_file = open(path_purge_file, "r")
