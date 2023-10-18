@@ -6,7 +6,6 @@ parser = argparse.ArgumentParser(description='Parser reporting in to help clean 
 parser.add_argument('--path_purge_file', metavar='N', type=str, nargs=1, required = True, help='Path to the input file, including file title, ex. dir/subdir/myOldSciNetFiles.txt')
 parser.add_argument('--path_out_file', metavar='M', type=str, nargs=1, required = True, help='Path to the output destination, including file title, ex. dir/subdir/upForDeletion.csv')
 args = parser.parse_args()
-
 print("Received arguments as input path {} and output path {}".format(args.path_purge_file, args.path_out_file))
 print("Note: regex commands here are for Niagara specifically, other file separators and printout formats may require adjustments. User-tunability of these is pending")
 
@@ -19,9 +18,8 @@ def purge_watcher(path_purge_file, path_out_file):
   Returns:
   * G_count (list of int): A list indicating the number of atoms with i edges in G, where i is the index of G_count
   """
-  
   if not type(path_purge_file) is str or not type(path_out_file) is str:
-    raise TypeError("Only string paths are allowed")
+    raise TypeError("Only string paths are allowed, received input formats {} and {}".format(type(path_purge_file), type(path_out_file)))
   text_file = open(path_purge_file, "r")
   filename = text_file.readlines()
   filetype = []
@@ -63,4 +61,4 @@ def purge_watcher(path_purge_file, path_out_file):
   return None
 
 print("Beginning function purge_watcher...")
-purge_watcher(args.path_purge_file, args.path_out_file)
+purge_watcher(args.path_purge_file[0], args.path_out_file[0])
