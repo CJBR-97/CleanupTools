@@ -3,8 +3,8 @@ import re
 import pandas as pd
 
 parser = argparse.ArgumentParser(description='Parser reporting in to help clean purge list for viewing')
-parser.add_argument('path_purge_file', metavar='N', type=str, nargs=1, help='Path to the input file, including file title, ex. dir/subdir/myOldSciNetFiles.txt')
-parser.add_argument('path_out_file', metavar='M', type=str, nargs=1, help='Path to the output destination, including file title, ex. dir/subdir/upForDeletion.csv')
+parser.add_argument('--path_purge_file', metavar='N', type=str, nargs=1, required = True, help='Path to the input file, including file title, ex. dir/subdir/myOldSciNetFiles.txt')
+parser.add_argument('--path_out_file', metavar='M', type=str, nargs=1, required = True, help='Path to the output destination, including file title, ex. dir/subdir/upForDeletion.csv')
 args = parser.parse_args()
 
 print("Received arguments as input path {} and output path {}".format(args.path_purge_file, args.path_out_file))
