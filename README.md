@@ -7,7 +7,7 @@ The purge_watcher.py and purge_watcher_bash.py python files were constructed for
 
 *purge_watcher_bash.py* <br>
 An arbitrary use case is shown below <br>
-'''
+```Bash
 source home/yourdir/ENV/bin/activate  
 (ENV) username@server-login:/yourdir$ python purge_watcher_bash.py --path_purge_file="filename.txt" --path_out_file="outfile.csv"
 Received arguments as input path ['filename.txt'] and output path ['outfile.csv']
@@ -22,4 +22,4 @@ Dataframe has shape (10, 3)
 3  file_to_be_purged_3.csv     .csv  /path_3...
 4  file_to_be_purged_4.csv     .csv  /path_4...
 ...Completed function purge_watcher
-'''
+```
