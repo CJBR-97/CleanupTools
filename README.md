@@ -7,9 +7,12 @@ The purge_watcher.py and purge_watcher_bash.py python files were constructed for
 
 *purge_watcher_bash.py* <br>
 An arbitrary use case is shown below <br>
-```Bash
+```
 source home/yourdir/ENV/bin/activate  
 (ENV) username@server-login:/yourdir$ python purge_watcher_bash.py --path_purge_file="filename.txt" --path_out_file="outfile.csv"
+```
+Which produces output as follows for a file containing 100 items to be purged
+```
 Received arguments as input path ['filename.txt'] and output path ['outfile.csv']
 Note: regex commands here are for Niagara specifically, other file separators and printout formats may require adjustments. User-tunability of these is pending
 Beginning function purge_watcher...
