@@ -3,9 +3,9 @@ Code for organizing, reading, and removing files in a user-friendly way.
 
 The purge_watcher.py and purge_watcher_bash.py python files were constructed for the list of files produced by SciNet on their Niagara supercomputer during monthly purges. The first version was developed for use in a Python environment such as Colab, and the bash version is for use in the terminal. The bash version comes with -h help functionality.
 
-# Documentation
+## Documentation
 
-*purge_watcher_bash.py* <br>
+###purge_watcher_bash.py <br>
 An arbitrary use case is shown below <br>
 ```
 source home/yourdir/ENV/bin/activate  
