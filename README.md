@@ -11,7 +11,7 @@ An arbitrary use case is shown below, for a file containing 100 items to be purg
 
 ```
 source home/yourdir/ENV/bin/activate  
-(ENV) username@server-login:/yourdir$ python purge_watcher_bash.py --path_purge_file="filename.txt" --path_out_file="outfile.csv"
+(ENV) python purge_watcher_bash.py --path_purge_file="filename.txt" --path_out_file="outfile.csv"
 ```
 
 Which produces output as follows.
