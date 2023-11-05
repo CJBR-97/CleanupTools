@@ -5,8 +5,10 @@ The purge_watcher.py and purge_watcher_bash.py python files were constructed for
 
 ## Documentation
 
-###purge_watcher_bash.py <br>
-An arbitrary use case is shown below <br>
+### purge_watcher_bash.py 
+<br>
+An arbitrary use case is shown below 
+<br>
 ```
 source home/yourdir/ENV/bin/activate  
 (ENV) username@server-login:/yourdir$ python purge_watcher_bash.py --path_purge_file="filename.txt" --path_out_file="outfile.csv"
