@@ -6,8 +6,7 @@ The purge_watcher.py and purge_watcher_bash.py python files were constructed for
 ## Documentation
 
 ### purge_watcher_bash.py 
-<br>
-An arbitrary use case is shown below 
+An arbitrary use case is shown below, for a file containing 100 items to be purged.  First load an environment with the required Python packages (pandas, etc).
 <br>
 
 ```
@@ -15,7 +14,7 @@ source home/yourdir/ENV/bin/activate
 (ENV) username@server-login:/yourdir$ python purge_watcher_bash.py --path_purge_file="filename.txt" --path_out_file="outfile.csv"
 ```
 
-Which produces output as follows for a file containing 100 items to be purged
+Which produces output as follows.
 
 ```
 Received arguments as input path ['filename.txt'] and output path ['outfile.csv']
