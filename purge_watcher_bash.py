@@ -16,7 +16,7 @@ def purge_watcher(path_purge_file, path_out_file):
   * path_out_file (str): Path to the output destination, including file title, ex. dir/subdir/upForDeletion.csv
 
   Returns:
-  * G_count (list of int): A list indicating the number of atoms with i edges in G, where i is the index of G_count
+  * None
   """
   if not type(path_purge_file) is str or not type(path_out_file) is str:
     raise TypeError("Only string paths are allowed, received input formats {} and {}".format(type(path_purge_file), type(path_out_file)))
